@@ -1,0 +1,45 @@
+#coding: utf-8
+box: python
+author: wxx
+version: 1.0
+
+common:
+    headers:
+      Content-type: application/x-www-form-urlencoded
+      Accept: text/plain
+      _token:
+
+build:
+  batchCheckUserIsOnline:
+    doc: 查询用户是否在线
+    method: POST
+    url: /api2/OpenAccountApi.batchCheckUserIsOnline
+    headers:
+      Content-type: application/json
+      Accept: text/plain
+      _token:
+    body:
+    parameters:
+
+  checkUserIsOnline:
+    doc: 会话转接-查询用户是否在线
+    method: POST
+    url: /api2/OpenAccountApi.checkUserIsOnline
+    headers:
+      Content-type: application/json
+      Accept: text/plain
+      _token:
+    body:
+    parameters:
+
+  getOnlineEngineers:
+    doc: 查询当前客服可见的所有在线客服基础信息以及会话数
+    method: POST
+    url: /api2/OpenAccountApi.getOnlineEngineers
+    headers:
+      Content-type: application/json
+      Accept: text/plain
+      _token:
+    body:
+    parameters:
+
